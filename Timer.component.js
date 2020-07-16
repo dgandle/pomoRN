@@ -6,59 +6,67 @@ import {
 import Button from 'react-native-button';
 import BackgroundTimer from 'react-native-background-timer';
 
+import TimerStatus from './TimerStatus';
+import TimerButtonSequence from './TimerButtonSequence.component';
+
 import styles from './Timer.styles';
 
 const Timer = () => {
 
-    const timerStatus = {
-        STOPPED: 'stopped',
-        ACTIVE: 'active',
-        RESTING: 'resting',
-        PAUSED: 'paused'
-    }
-
     const [count, setCount] = useState(0);
-    const [status, setStatus] = useState(timerStatus.STOPPED)
+    const [status, setStatus] = useState(TimerStatus.STOPPED)
 
-    onStart = () => {
-        setStatus(timerStatus.ACTIVE);
+    startTimer = (status) => {
+        setStatus(status)
         BackgroundTimer.runBackgroundTimer(() => {
-            updateTimer();
+            updateCount();
         }, 1000);
     }
     
-    onPause = () => {
+    pauseTimer = (status) => {
+        setStatus(status)
         BackgroundTimer.stopBackgroundTimer();
-        setStatus(timerStatus.PAUSED)
     }
     
-    onStop = () => {
+    resetTimer = () => {
+        setStatus(TimerStatus.STOPPED)
         BackgroundTimer.stopBackgroundTimer();
-        setStatus(timerStatus.STOPPED)
         setCount(0);
     }
 
-    onResume = () => {
-        setStatus(timerStatus.ACTIVE);
-        BackgroundTimer.runBackgroundTimer(() => {
-            updateTimer();
-        }, 1000);
-    }
-
-    updateTimer = () => {
+    updateCount = () => {
         setCount(count + 1);
         switch (status) {
-            case timerStatus.ACTIVE:
+            case TimerStatus.ACTIVE:
                 if (count >= 10) {
                     setCount(0)
-                    setStatus(timerStatus.RESTING)
+                    setStatus(TimerStatus.RESTING)
                 }
                 break;
-            case timerStatus.RESTING:
+            case TimerStatus.RESTING:
                 if (count >= 5) { 
                     setCount(0)
-                    setStatus(timerStatus.ACTIVE)
+                    setStatus(TimerStatus.ACTIVE)
                 }
+                break;
+        }
+    }
+
+    onSequencePress = (stopped) => {
+        switch (status) {
+            case TimerStatus.STOPPED:
+                startTimer(TimerStatus.ACTIVE)
+                break;
+            case TimerStatus.ACTIVE:
+                pauseTimer(TimerStatus.PAUSED.ACTIVE)
+            case TimerStatus.RESTING:
+                pauseTimer(TimerStatus.PAUSED.RESTING)
+                break;
+            case TimerStatus.PAUSED.ACTIVE:
+                stopped ? resetTimer() : startTimer(TimerStatus.ACTIVE)
+                break;
+            case TimerStatus.PAUSED.RESTING:
+                stopped ? resetTimer() : startTimer(TimerStatus.RESTING)
                 break;
         }
     }
@@ -66,62 +74,8 @@ const Timer = () => {
     // Rendering
 
     renderButtons = () => {
-        switch (status) {
-            case timerStatus.STOPPED:
-                return (renderStartButton());
-                break;
-            case timerStatus.ACTIVE:
-            case timerStatus.RESTING:
-                return (renderPauseButton());
-                break;
-            case timerStatus.PAUSED:
-                return (renderResumeStopButtons());
-                break;
-        }
-    }
-    
-    renderStartButton = () => {
         return (
-            <View style={styles.buttonWrapper}>
-                <Button
-                    style={styles.button}
-                    onPress={onStart}>
-                    BEGIN
-                </Button>
-            </View>
-        )
-    }
-    
-    renderPauseButton = () => {
-        return (
-            <View style={styles.buttonWrapper}>
-                <Button
-                    style={styles.button}
-                    onPress={onPause}>
-                    PAUSE
-                </Button>
-            </View>
-        )
-    }
-
-    renderResumeStopButtons = () => {
-        return (
-            <View style={styles.buttonWrapper}>
-                <View style={styles.buttonContainer}>
-                    <Button
-                        style={styles.button}
-                        onPress={onResume}>
-                        RESUME
-                    </Button>
-                </View>
-                <View style={styles.buttonContainer}>
-                    <Button
-                        style={styles.button}
-                        onPress={onStop}>
-                        END
-                    </Button>
-                </View>
-            </View>
+            <TimerButtonSequence status={status} setStatus={setStatus} onPress={onSequencePress}/>
         )
     }
     

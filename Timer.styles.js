@@ -28,7 +28,7 @@ const style = StyleSheet.create({
 
     button: {
         fontFamily: 'Cardo-Bold',
-        fontSize: 20,
+        fontSize: 22,
         color: '#6C9885',
     },
 });
