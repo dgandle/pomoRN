@@ -7,14 +7,19 @@ const style = StyleSheet.create({
     container: {
         flexGrow: 1,
         flexDirection: 'column',
-        alignItems: 'stretch',
+        alignItems: 'center',
+        justifyContent: 'space-around',
+    },
+
+    buttonSequenceContainer: {
+        alignSelf: 'stretch',
         justifyContent: 'space-between',
     },
 
     buttonWrapper: {
         flexDirection: 'row',
         justifyContent: 'center',
-        alignItems: 'center',
+        alignSelf: 'stretch',
         padding: 32,
     },
 

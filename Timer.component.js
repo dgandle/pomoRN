@@ -3,13 +3,35 @@ import {
     View,
     Text,
 } from 'react-native';
-import Button from 'react-native-button';
 import BackgroundTimer from 'react-native-background-timer';
+import Svg, {
+    Circle,
+    Ellipse,
+    G,
+    TSpan,
+    TextPath,
+    Path,
+    Polygon,
+    Polyline,
+    Line,
+    Rect,
+    Use,
+    Image,
+    Symbol,
+    Defs,
+    LinearGradient,
+    RadialGradient,
+    Stop,
+    ClipPath,
+    Pattern,
+    Mask,
+  } from 'react-native-svg';
 
 import TimerStatus from './TimerStatus';
 import TimerButtonSequence from './TimerButtonSequence.component';
 
 import styles from './Timer.styles';
+import TimerVisual from './TimerVisual.component';
 
 const Timer = () => {
 
@@ -83,6 +105,7 @@ const Timer = () => {
         return (
             <View style={styles.container}>
                 <Text style={styles.secondText}>{count}</Text>
+                <TimerVisual />
                 {renderButtons()}
             </View>
         )

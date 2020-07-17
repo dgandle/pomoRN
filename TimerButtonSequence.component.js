@@ -1,133 +1,91 @@
-import React, { useState, useRef } from 'react'
-import { View } from 'react-native'
-import { Transitioning, Transition } from 'react-native-reanimated'
+import React from 'react'
 import styles from './Timer.styles';
-import Button from 'react-native-button';
 import TimerStatus from './TimerStatus';
 import TimerButton from './TimerButton.component';
-
-// TODO: switch all buttons to TimerButton
+import { View } from 'react-native-animatable'
 
 const TimerButtonSequence = (props) => {
-    const ref = useRef()
-
-    const transition = (
-        <Transition.Sequence>
-            {/* <Transition.Together>
-                <Transition.Out
-                type="slide-left"
-                durationMs={300}
-                interpolation="easeOut"
-                />
-                <Transition.Out type="fade" durationMs={500} delayMs={200} />
-                <Transition.In
-                type="slide-right"
-                durationMs={300}
-                interpolation="easeOut"
-                />
-                <Transition.In type="fade" durationMs={500} delayMs={200} />
-            </Transition.Together> */}
-            <Transition.Out type="fade" durationMs={300} interpolation="easeOut" />
-            <Transition.In type="fade" durationMs={500} delayMs={300} interpolation="easeIn" />
-        </Transition.Sequence>
-    );
-
     return (
-        <Transitioning.View
-            ref={ref}
-            style={styles.container}
-            transition={transition}>
+        <View
+            style={styles.buttonSequenceContainer}>
                 {props.status == TimerStatus.STOPPED && (
-                    <View style={styles.buttonWrapper} key={props.status}>
+                    <View animation='fadeIn' duration={1000} delay={200} style={styles.buttonWrapper} key={props.status}>
                         <TimerButton
                         onPress={() => {
-                            ref.current.animateNextTransition();
                             props.onPress();
                             }}
                         >
-                            BEGIN  ➞
+                            BEGIN  →
                         </TimerButton>
                     </View>
                 )}
                 {props.status == TimerStatus.ACTIVE && (
-                    <View style={styles.buttonWrapper} key={props.status}>
-                        <Button
-                        style={styles.button}
+                    <View animation='fadeIn' duration={1000} delay={200} style={styles.buttonWrapper} key={props.status}>
+                        <TimerButton
                         onPress={() => {
-                            ref.current.animateNextTransition();
                             props.onPress();
                             }}
                         >
                             PAUSE
-                        </Button>
+                        </TimerButton>
                     </View>
                 )}
                 {props.status == TimerStatus.RESTING && (
-                    <View style={styles.buttonWrapper} key={props.status}>
-                        <Button
-                        style={styles.button}
+                    <View animation='fadeIn' duration={1000} delay={200} style={styles.buttonWrapper} key={props.status}>
+                        <TimerButton
                         onPress={() => {
-                            ref.current.animateNextTransition();
                             props.onPress();
                             }}
                         >
                             PAUSE
-                        </Button>
+                        </TimerButton>
                     </View>
                 )}
                 {props.status == TimerStatus.PAUSED.ACTIVE && (
-                    <View style={styles.buttonWrapper} key={props.status}>
+                    <View animation='fadeIn' duration={1000} delay={200} style={styles.buttonWrapper} key={props.status}>
                             <View style={styles.buttonContainer}>
-                                <Button
-                                    style={styles.button}
+                                <TimerButton
                                     onPress={() => {
-                                        ref.current.animateNextTransition();
                                         props.onPress(false);
                                         }}
                                     >
                                     RESUME
-                                </Button>
+                                </TimerButton>
                             </View>
                             <View style={styles.buttonContainer}>
-                                <Button
-                                    style={styles.button}
+                                <TimerButton
                                     onPress={() => {
-                                        ref.current.animateNextTransition();
                                         props.onPress(true);
                                         }}
                                     >
                                     END
-                                </Button>
+                                </TimerButton>
                             </View>
                     </View>
                 )}
                 {props.status == TimerStatus.PAUSED.RESTING && (
-                    <View style={styles.buttonWrapper} key={props.status}>
+                    <View animation='fadeIn' duration={1000} delay={200} style={styles.buttonWrapper} key={props.status}>
                             <View style={styles.buttonContainer}>
-                                <Button
-                                    style={styles.button}
+                                <TimerButton
                                     onPress={() => {
-                                        ref.current.animateNextTransition();
                                         props.onPress(false);
                                         }}
                                     >
                                     RESUME
-                                </Button>
+                                </TimerButton>
                             </View>
                             <View style={styles.buttonContainer}>
-                                <Button
-                                    style={styles.button}
+                                <TimerButton
                                     onPress={() => {
-                                        ref.current.animateNextTransition();
                                         props.onPress(true);
                                         }}
                                     >
                                     END
-                                </Button>
+                                </TimerButton>
                             </View>
                     </View>
                 )}
-        </Transitioning.View>
+        </View>
     )
 }
 
