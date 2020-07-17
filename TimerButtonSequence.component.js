@@ -4,27 +4,31 @@ import { Transitioning, Transition } from 'react-native-reanimated'
 import styles from './Timer.styles';
 import Button from 'react-native-button';
 import TimerStatus from './TimerStatus';
+import TimerButton from './TimerButton.component';
+
+// TODO: switch all buttons to TimerButton
 
 const TimerButtonSequence = (props) => {
-    // let [status, setStatus] = useState(TimerStatus.STOPPED);
     const ref = useRef()
 
     const transition = (
         <Transition.Sequence>
-            <Transition.Together>
+            {/* <Transition.Together>
                 <Transition.Out
                 type="slide-left"
-                durationMs={500}
+                durationMs={300}
                 interpolation="easeOut"
                 />
-                <Transition.Out type="fade" durationMs={500} delayMs={0} />
+                <Transition.Out type="fade" durationMs={500} delayMs={200} />
                 <Transition.In
                 type="slide-right"
-                durationMs={500}
+                durationMs={300}
                 interpolation="easeOut"
                 />
-                <Transition.In type="fade" durationMs={500} delayMs={0} />
-            </Transition.Together>
+                <Transition.In type="fade" durationMs={500} delayMs={200} />
+            </Transition.Together> */}
+            <Transition.Out type="fade" durationMs={300} interpolation="easeOut" />
+            <Transition.In type="fade" durationMs={500} delayMs={300} interpolation="easeIn" />
         </Transition.Sequence>
     );
 
@@ -35,16 +39,14 @@ const TimerButtonSequence = (props) => {
             transition={transition}>
                 {props.status == TimerStatus.STOPPED && (
                     <View style={styles.buttonWrapper} key={props.status}>
-                        <Button
-                        style={styles.button}
+                        <TimerButton
                         onPress={() => {
                             ref.current.animateNextTransition();
-                            // props.setStatus(TimerStatus.ACTIVE);
                             props.onPress();
                             }}
                         >
-                            BEGIN →
-                        </Button>
+                            BEGIN  ➞
+                        </TimerButton>
                     </View>
                 )}
                 {props.status == TimerStatus.ACTIVE && (
@@ -53,7 +55,6 @@ const TimerButtonSequence = (props) => {
                         style={styles.button}
                         onPress={() => {
                             ref.current.animateNextTransition();
-                            // props.setStatus(TimerStatus.PAUSED);
                             props.onPress();
                             }}
                         >
@@ -67,7 +68,6 @@ const TimerButtonSequence = (props) => {
                         style={styles.button}
                         onPress={() => {
                             ref.current.animateNextTransition();
-                            // props.setStatus(TimerStatus.PAUSED);
                             props.onPress();
                             }}
                         >
@@ -82,7 +82,6 @@ const TimerButtonSequence = (props) => {
                                     style={styles.button}
                                     onPress={() => {
                                         ref.current.animateNextTransition();
-                                        // props.setStatus(TimerStatus.ACTIVE);
                                         props.onPress(false);
                                         }}
                                     >
@@ -94,7 +93,6 @@ const TimerButtonSequence = (props) => {
                                     style={styles.button}
                                     onPress={() => {
                                         ref.current.animateNextTransition();
-                                        // props.setStatus(TimerStatus.STOPPED);
                                         props.onPress(true);
                                         }}
                                     >
@@ -110,7 +108,6 @@ const TimerButtonSequence = (props) => {
                                     style={styles.button}
                                     onPress={() => {
                                         ref.current.animateNextTransition();
-                                        // props.setStatus(TimerStatus.ACTIVE);
                                         props.onPress(false);
                                         }}
                                     >
@@ -122,7 +119,6 @@ const TimerButtonSequence = (props) => {
                                     style={styles.button}
                                     onPress={() => {
                                         ref.current.animateNextTransition();
-                                        // props.setStatus(TimerStatus.STOPPED);
                                         props.onPress(true);
                                         }}
                                     >
