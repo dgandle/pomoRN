@@ -8,7 +8,15 @@ const style = StyleSheet.create({
         flexGrow: 1,
         flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'space-around',
+        padding: 32,
+    },
+
+    titleText: {
+        fontFamily: 'Cardo-Bold',
+        fontSize: 48,
+        textAlign: 'left',
+        alignSelf: 'flex-start'
     },
 
     timerVisual: {

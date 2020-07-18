@@ -22,10 +22,7 @@ import Timer from './Timer.component';
 const App = () => {
   return (
     <SafeAreaView style={styles.background}>
-      <View style={styles.main}>
-        <Text style={styles.titleText}>Pomo.</Text>
         <Timer />
-      </View>
     </SafeAreaView>
   );
 };

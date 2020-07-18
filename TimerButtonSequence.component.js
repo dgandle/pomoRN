@@ -18,7 +18,7 @@ const TimerButtonSequence = (props) => {
                     </View>
                 )}
                 {(props.status == TimerStatus.ACTIVE || props.status == TimerStatus.RESTING) && (
-                    <View animation='fadeIn' duration={1000} delay={200} style={styles.buttonWrapper}>
+                    <View animation='fadeIn' duration={1000} delay={500} style={styles.buttonWrapper}>
                         <TimerButton
                         onPress={props.onPress}
                         >

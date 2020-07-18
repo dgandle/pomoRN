@@ -5,8 +5,7 @@ import Svg, {
     ClipPath,
     Rect,
     Text,
-    TSpan,
-    G
+    TSpan
   } from 'react-native-svg';
 import TimerStatus from './TimerStatus';
 import { Transitioning, Transition } from 'react-native-reanimated'
@@ -14,27 +13,20 @@ import { Transitioning, Transition } from 'react-native-reanimated'
 
 class Clipped extends Component {
 
-    clippedRef = React.createRef()
-    clippedTransition = (
-        <Transition.Sequence>
-            <Transition.Out type="fade" durationMs={1000} interpolation="easeOut" />
-            <Transition.In type="fade" durationMs={1000} interpolation="easeIn" />
-        </Transition.Sequence>
-    )
+    constructor(props) {
+        super(props);
+        this.clippedRef = React.createRef()
+        this.clippedTransition = (
+            <Transition.Sequence>
+                <Transition.Out type="fade" durationMs={1000} interpolation="easeOut" />
+                <Transition.In type="fade" durationMs={1000} interpolation="easeIn" />
+            </Transition.Sequence>
+        )
+    }
 
     componentDidUpdate() {
         this.clippedRef.current.animateNextTransition()
     }
-
-    // opactiyForStatus() {
-    //     switch (this.props.status) {
-    //         case TimerStatus.PAUSED_ACTIVE:
-    //         case TimerStatus.PAUSED_RESTING:
-    //             return (0.5)
-    //         default:
-    //             return (1)
-    //     }
-    // }
 
     render() {
         return (

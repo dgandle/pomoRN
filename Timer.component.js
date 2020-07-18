@@ -16,7 +16,7 @@ const Timer = () => {
     const [count, setCount] = useState(0);
     const [status, setStatus] = useState(TimerStatus.STOPPED)
 
-    const activeMinutes = 1
+    const activeMinutes = 25
     const restingMinutes = 5
 
     startTimer = (newStatus) => {
@@ -89,7 +89,7 @@ const Timer = () => {
 
     return (
         <View style={styles.container}>
-            {/* <Text style={styles.secondText}>{count}{status}</Text> */}
+            <Text style={styles.titleText}>Pomo.</Text>
             <TimerVisual style={styles.timerVisual} progress={convertCountToProgress()} status={status} />
             <TimerButtonSequence status={status} onPress={onSequencePress}/>
         </View>
