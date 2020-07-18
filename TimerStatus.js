@@ -1,11 +1,9 @@
-const timerStatus = {
+const TimerStatus = {
     STOPPED: 'stopped',
     ACTIVE: 'active',
     RESTING: 'resting',
-    PAUSED: {
-        ACTIVE: 'paused.active',
-        RESTING: 'paused.resting'
-    }
+    PAUSED_ACTIVE: 'paused_active',
+    PAUSED_RESTING: 'paused_resting',
 }
 
-export default timerStatus;
+export default TimerStatus;

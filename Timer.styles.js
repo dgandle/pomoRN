@@ -8,7 +8,11 @@ const style = StyleSheet.create({
         flexGrow: 1,
         flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'space-around',
+        justifyContent: 'center',
+    },
+
+    timerVisual: {
+        backgroundColor: 'red',
     },
 
     buttonSequenceContainer: {

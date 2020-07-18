@@ -9,40 +9,34 @@ const TimerButtonSequence = (props) => {
         <View
             style={styles.buttonSequenceContainer}>
                 {props.status == TimerStatus.STOPPED && (
-                    <View animation='fadeIn' duration={1000} delay={200} style={styles.buttonWrapper} key={props.status}>
+                    <View animation='fadeIn' duration={1000} delay={200} style={styles.buttonWrapper}>
                         <TimerButton
-                        onPress={() => {
-                            props.onPress();
-                            }}
+                        onPress={props.onPress}
                         >
                             BEGIN  →
                         </TimerButton>
                     </View>
                 )}
                 {props.status == TimerStatus.ACTIVE && (
-                    <View animation='fadeIn' duration={1000} delay={200} style={styles.buttonWrapper} key={props.status}>
+                    <View animation='fadeIn' duration={1000} delay={200} style={styles.buttonWrapper}>
                         <TimerButton
-                        onPress={() => {
-                            props.onPress();
-                            }}
+                        onPress={props.onPress}
                         >
                             PAUSE
                         </TimerButton>
                     </View>
                 )}
                 {props.status == TimerStatus.RESTING && (
-                    <View animation='fadeIn' duration={1000} delay={200} style={styles.buttonWrapper} key={props.status}>
+                    <View animation='fadeIn' duration={1000} delay={200} style={styles.buttonWrapper}>
                         <TimerButton
-                        onPress={() => {
-                            props.onPress();
-                            }}
+                        onPress={props.onPress}
                         >
                             PAUSE
                         </TimerButton>
                     </View>
                 )}
-                {props.status == TimerStatus.PAUSED.ACTIVE && (
-                    <View animation='fadeIn' duration={1000} delay={200} style={styles.buttonWrapper} key={props.status}>
+                {props.status == TimerStatus.PAUSED_ACTIVE && (
+                    <View animation='fadeIn' duration={1000} delay={200} style={styles.buttonWrapper}>
                             <View style={styles.buttonContainer}>
                                 <TimerButton
                                     onPress={() => {
@@ -63,8 +57,8 @@ const TimerButtonSequence = (props) => {
                             </View>
                     </View>
                 )}
-                {props.status == TimerStatus.PAUSED.RESTING && (
-                    <View animation='fadeIn' duration={1000} delay={200} style={styles.buttonWrapper} key={props.status}>
+                {props.status == TimerStatus.PAUSED_RESTING && (
+                    <View animation='fadeIn' duration={1000} delay={200} style={styles.buttonWrapper}>
                             <View style={styles.buttonContainer}>
                                 <TimerButton
                                     onPress={() => {

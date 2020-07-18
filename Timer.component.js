@@ -4,28 +4,6 @@ import {
     Text,
 } from 'react-native';
 import BackgroundTimer from 'react-native-background-timer';
-import Svg, {
-    Circle,
-    Ellipse,
-    G,
-    TSpan,
-    TextPath,
-    Path,
-    Polygon,
-    Polyline,
-    Line,
-    Rect,
-    Use,
-    Image,
-    Symbol,
-    Defs,
-    LinearGradient,
-    RadialGradient,
-    Stop,
-    ClipPath,
-    Pattern,
-    Mask,
-  } from 'react-native-svg';
 
 import TimerStatus from './TimerStatus';
 import TimerButtonSequence from './TimerButtonSequence.component';
@@ -38,15 +16,18 @@ const Timer = () => {
     const [count, setCount] = useState(0);
     const [status, setStatus] = useState(TimerStatus.STOPPED)
 
-    startTimer = (status) => {
-        setStatus(status)
+    const activeMinutes = 1/6
+    const restingMinutes = 5
+
+    startTimer = (newStatus) => {
+        setStatus(newStatus)
         BackgroundTimer.runBackgroundTimer(() => {
             updateCount();
         }, 1000);
     }
     
-    pauseTimer = (status) => {
-        setStatus(status)
+    pauseTimer = (newStatus) => {
+        setStatus(newStatus)
         BackgroundTimer.stopBackgroundTimer();
     }
     
@@ -60,13 +41,13 @@ const Timer = () => {
         setCount(count + 1);
         switch (status) {
             case TimerStatus.ACTIVE:
-                if (count >= 10) {
+                if (count >= activeMinutes * 60) {
                     setCount(0)
                     setStatus(TimerStatus.RESTING)
                 }
                 break;
             case TimerStatus.RESTING:
-                if (count >= 5) { 
+                if (count >= restingMinutes * 60) { 
                     setCount(0)
                     setStatus(TimerStatus.ACTIVE)
                 }
@@ -80,39 +61,38 @@ const Timer = () => {
                 startTimer(TimerStatus.ACTIVE)
                 break;
             case TimerStatus.ACTIVE:
-                pauseTimer(TimerStatus.PAUSED.ACTIVE)
-            case TimerStatus.RESTING:
-                pauseTimer(TimerStatus.PAUSED.RESTING)
+                pauseTimer(TimerStatus.PAUSED_ACTIVE)
                 break;
-            case TimerStatus.PAUSED.ACTIVE:
+            case TimerStatus.RESTING:
+                pauseTimer(TimerStatus.PAUSED_RESTING)
+                break;
+            case TimerStatus.PAUSED_ACTIVE:
                 stopped ? resetTimer() : startTimer(TimerStatus.ACTIVE)
                 break;
-            case TimerStatus.PAUSED.RESTING:
+            case TimerStatus.PAUSED_RESTING:
                 stopped ? resetTimer() : startTimer(TimerStatus.RESTING)
                 break;
         }
     }
-    
-    // Rendering
 
-    renderButtons = () => {
-        return (
-            <TimerButtonSequence status={status} setStatus={setStatus} onPress={onSequencePress}/>
-        )
-    }
-    
-    render = () => {
-        return (
-            <View style={styles.container}>
-                <Text style={styles.secondText}>{count}</Text>
-                <TimerVisual />
-                {renderButtons()}
-            </View>
-        )
+    convertCountToProgress = () => {
+        switch (status) {
+            case TimerStatus.STOPPED:
+            case TimerStatus.ACTIVE:
+            case TimerStatus.PAUSED_ACTIVE:
+                return (count * (100/(activeMinutes*60)))
+            case TimerStatus.RESTING:
+            case TimerStatus.PAUSED_RESTING:
+                return (count * (100/(restingMinutes*60)))
+        }
     }
 
     return (
-        render()
+        <View style={styles.container}>
+            {/* <Text style={styles.secondText}>{count}{status}</Text> */}
+            <TimerVisual style={styles.timerVisual} progress={convertCountToProgress()} status={status} />
+            <TimerButtonSequence status={status} onPress={onSequencePress}/>
+        </View>
     );
 }
 
