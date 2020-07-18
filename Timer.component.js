@@ -16,7 +16,7 @@ const Timer = () => {
     const [count, setCount] = useState(0);
     const [status, setStatus] = useState(TimerStatus.STOPPED)
 
-    const activeMinutes = 1/6
+    const activeMinutes = 1
     const restingMinutes = 5
 
     startTimer = (newStatus) => {
