@@ -16,14 +16,14 @@ const Timer = () => {
     const [count, setCount] = useState(0);
     const [status, setStatus] = useState(TimerStatus.STOPPED)
 
-    const activeMinutes = 25
-    const restingMinutes = 5
+    const activeMinutes = 1/6
+    const restingMinutes = 1/6
 
     startTimer = (newStatus) => {
         setStatus(newStatus)
         BackgroundTimer.runBackgroundTimer(() => {
             updateCount();
-        }, 1000);
+        }, 100);
     }
     
     pauseTimer = (newStatus) => {
@@ -41,13 +41,13 @@ const Timer = () => {
         setCount(count + 1);
         switch (status) {
             case TimerStatus.ACTIVE:
-                if (count >= activeMinutes * 60) {
+                if (count >= activeMinutes * 60 * 10) {
                     setCount(0)
                     setStatus(TimerStatus.RESTING)
                 }
                 break;
             case TimerStatus.RESTING:
-                if (count >= restingMinutes * 60) { 
+                if (count >= restingMinutes * 60 * 10) { 
                     setCount(0)
                     setStatus(TimerStatus.ACTIVE)
                 }
