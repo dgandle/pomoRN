@@ -8,13 +8,9 @@ target 'Pomo' do
 
   use_react_native!(:path => config["reactNativePath"])
 
-  pod 'react-native-background-timer', :path => '../node_modules/react-native-background-timer'
 
-  pod 'RNSVG', :path => '../node_modules/react-native-svg'
 
-  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
 
-  pod 'RNBackgroundFetch', :path => '../node_modules/react-native-background-fetch'
 
   target 'PomoTests' do
     inherit! :complete

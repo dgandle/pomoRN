@@ -14,13 +14,8 @@ const Timer = () => {
     const [count, setCount] = useState(0);
     const [status, setStatus] = useState(TimerStatus.STOPPED)
 
-    const activeMinutes = 1
-    const restingMinutes = 1
-
-    BackgroundTask.define(async () => {
-        updateCount()
-        console.log('running background task')
-    })
+    const activeMinutes = 25
+    const restingMinutes = 5
 
     useEffect(() => {
         SplashScreen.hide()
@@ -42,7 +37,6 @@ const Timer = () => {
                 BackgroundTimer.runBackgroundTimer(async () => {
                     updateCount()
                 }, 100)
-                this.checkStatus()
                 break
             case TimerStatus.PAUSED_ACTIVE:
             case TimerStatus.PAUSED_RESTING:
