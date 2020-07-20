@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "pomoRN-tvOS.app"
-               BlueprintName = "pomoRN-tvOS"
-               ReferencedContainer = "container:pomoRN.xcodeproj">
+               BuildableName = "Pomo-tvOS.app"
+               BlueprintName = "Pomo-tvOS"
+               ReferencedContainer = "container:Pomo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "pomoRN-tvOSTests.xctest"
-               BlueprintName = "pomoRN-tvOSTests"
-               ReferencedContainer = "container:pomoRN.xcodeproj">
+               BuildableName = "Pomo-tvOSTests.xctest"
+               BlueprintName = "Pomo-tvOSTests"
+               ReferencedContainer = "container:Pomo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "pomoRN-tvOS.app"
-            BlueprintName = "pomoRN-tvOS"
-            ReferencedContainer = "container:pomoRN.xcodeproj">
+            BuildableName = "Pomo-tvOS.app"
+            BlueprintName = "Pomo-tvOS"
+            ReferencedContainer = "container:Pomo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "pomoRN-tvOS.app"
-            BlueprintName = "pomoRN-tvOS"
-            ReferencedContainer = "container:pomoRN.xcodeproj">
+            BuildableName = "Pomo-tvOS.app"
+            BlueprintName = "Pomo-tvOS"
+            ReferencedContainer = "container:Pomo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

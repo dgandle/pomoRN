@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* pomoRNTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* pomoRNTests.m */; };
+		00E356F31AD99517003FC87E /* PomoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* PomoTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* pomoRNTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* pomoRNTests.m */; };
-		4EAC09F49B85E5A1DBD30A76 /* libPods-pomoRN-pomoRNTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE594687B50F4D53DB9DDB5 /* libPods-pomoRN-pomoRNTests.a */; };
-		5CFC017C6EECA432D8125E1B /* libPods-pomoRN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA77D1E1E5EE38002845F114 /* libPods-pomoRN.a */; };
-		676AF366DD59FDE330A24909 /* libPods-pomoRN-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A73C1DD07D0A6666165C2DF /* libPods-pomoRN-tvOS.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* PomoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* PomoTests.m */; };
+		4EAC09F49B85E5A1DBD30A76 /* libPods-Pomo-PomoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE594687B50F4D53DB9DDB5 /* libPods-Pomo-PomoTests.a */; };
+		5CFC017C6EECA432D8125E1B /* libPods-Pomo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA77D1E1E5EE38002845F114 /* libPods-Pomo.a */; };
+		676AF366DD59FDE330A24909 /* libPods-Pomo-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A73C1DD07D0A6666165C2DF /* libPods-Pomo-tvOS.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		BADB46832C4A675CCF88C2A8 /* libPods-pomoRN-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70320F3AB67C335A082C93CE /* libPods-pomoRN-tvOSTests.a */; };
+		BADB46832C4A675CCF88C2A8 /* libPods-Pomo-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70320F3AB67C335A082C93CE /* libPods-Pomo-tvOSTests.a */; };
 		2C239BD28EA04117B52E3945 /* Cardo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 529DB71586F247629B11CF75 /* Cardo-Bold.ttf */; };
 		749C9C10D1274E298B826B39 /* Cormorant-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0482BBBFDC3448AACFB8ABA /* Cormorant-BoldItalic.ttf */; };
 /* End PBXBuildFile section */
@@ -30,45 +30,45 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = pomoRN;
+			remoteInfo = Pomo;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "pomoRN-tvOS";
+			remoteInfo = "Pomo-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* pomoRNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pomoRNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* PomoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* pomoRNTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pomoRNTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* pomoRN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pomoRN.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = pomoRN/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = pomoRN/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = pomoRN/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = pomoRN/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = pomoRN/main.m; sourceTree = "<group>"; };
-		2A73C1DD07D0A6666165C2DF /* libPods-pomoRN-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pomoRN-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E47B1E0B4A5D006451C7 /* pomoRN-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pomoRN-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* pomoRN-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pomoRN-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E6984953E1564ACD722EE63 /* Pods-pomoRN-pomoRNTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomoRN-pomoRNTests.debug.xcconfig"; path = "Target Support Files/Pods-pomoRN-pomoRNTests/Pods-pomoRN-pomoRNTests.debug.xcconfig"; sourceTree = "<group>"; };
-		70320F3AB67C335A082C93CE /* libPods-pomoRN-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pomoRN-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = pomoRN/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A19939D3F129DCCD087A686E /* Pods-pomoRN-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomoRN-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-pomoRN-tvOS/Pods-pomoRN-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		ABE594687B50F4D53DB9DDB5 /* libPods-pomoRN-pomoRNTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pomoRN-pomoRNTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC7089D2884E0A7D6EA3B278 /* Pods-pomoRN-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomoRN-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-pomoRN-tvOSTests/Pods-pomoRN-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BA77D1E1E5EE38002845F114 /* libPods-pomoRN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pomoRN.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D426E2A2AD23BBA30F99F748 /* Pods-pomoRN-pomoRNTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomoRN-pomoRNTests.release.xcconfig"; path = "Target Support Files/Pods-pomoRN-pomoRNTests/Pods-pomoRN-pomoRNTests.release.xcconfig"; sourceTree = "<group>"; };
-		DAA2CD8A1615D5F42E17C081 /* Pods-pomoRN-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomoRN-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-pomoRN-tvOSTests/Pods-pomoRN-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		E6457070C93228F24C1B5EDC /* Pods-pomoRN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomoRN.debug.xcconfig"; path = "Target Support Files/Pods-pomoRN/Pods-pomoRN.debug.xcconfig"; sourceTree = "<group>"; };
-		E854710EB333B0498B32FBE7 /* Pods-pomoRN-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomoRN-tvOS.release.xcconfig"; path = "Target Support Files/Pods-pomoRN-tvOS/Pods-pomoRN-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* PomoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PomoTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Pomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Pomo/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Pomo/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Pomo/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Pomo/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Pomo/main.m; sourceTree = "<group>"; };
+		2A73C1DD07D0A6666165C2DF /* libPods-Pomo-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pomo-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E47B1E0B4A5D006451C7 /* Pomo-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pomo-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* Pomo-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pomo-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E6984953E1564ACD722EE63 /* Pods-Pomo-PomoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomo-PomoTests.debug.xcconfig"; path = "Target Support Files/Pods-Pomo-PomoTests/Pods-Pomo-PomoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		70320F3AB67C335A082C93CE /* libPods-Pomo-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pomo-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Pomo/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A19939D3F129DCCD087A686E /* Pods-Pomo-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomo-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Pomo-tvOS/Pods-Pomo-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		ABE594687B50F4D53DB9DDB5 /* libPods-Pomo-PomoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pomo-PomoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC7089D2884E0A7D6EA3B278 /* Pods-Pomo-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomo-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Pomo-tvOSTests/Pods-Pomo-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA77D1E1E5EE38002845F114 /* libPods-Pomo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pomo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D426E2A2AD23BBA30F99F748 /* Pods-Pomo-PomoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomo-PomoTests.release.xcconfig"; path = "Target Support Files/Pods-Pomo-PomoTests/Pods-Pomo-PomoTests.release.xcconfig"; sourceTree = "<group>"; };
+		DAA2CD8A1615D5F42E17C081 /* Pods-Pomo-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomo-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Pomo-tvOSTests/Pods-Pomo-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		E6457070C93228F24C1B5EDC /* Pods-Pomo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomo.debug.xcconfig"; path = "Target Support Files/Pods-Pomo/Pods-Pomo.debug.xcconfig"; sourceTree = "<group>"; };
+		E854710EB333B0498B32FBE7 /* Pods-Pomo-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomo-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Pomo-tvOS/Pods-Pomo-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F3720CAD73ED67C8D6E25E6F /* Pods-pomoRN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomoRN.release.xcconfig"; path = "Target Support Files/Pods-pomoRN/Pods-pomoRN.release.xcconfig"; sourceTree = "<group>"; };
+		F3720CAD73ED67C8D6E25E6F /* Pods-Pomo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomo.release.xcconfig"; path = "Target Support Files/Pods-Pomo/Pods-Pomo.release.xcconfig"; sourceTree = "<group>"; };
 		529DB71586F247629B11CF75 /* Cardo-Bold.ttf */ = {isa = PBXFileReference; name = "Cardo-Bold.ttf"; path = "../assets/fonts/Cardo-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		B0482BBBFDC3448AACFB8ABA /* Cormorant-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Cormorant-BoldItalic.ttf"; path = "../assets/fonts/Cormorant-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
@@ -78,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EAC09F49B85E5A1DBD30A76 /* libPods-pomoRN-pomoRNTests.a in Frameworks */,
+				4EAC09F49B85E5A1DBD30A76 /* libPods-Pomo-PomoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CFC017C6EECA432D8125E1B /* libPods-pomoRN.a in Frameworks */,
+				5CFC017C6EECA432D8125E1B /* libPods-Pomo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				676AF366DD59FDE330A24909 /* libPods-pomoRN-tvOS.a in Frameworks */,
+				676AF366DD59FDE330A24909 /* libPods-Pomo-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,20 +102,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BADB46832C4A675CCF88C2A8 /* libPods-pomoRN-tvOSTests.a in Frameworks */,
+				BADB46832C4A675CCF88C2A8 /* libPods-Pomo-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* pomoRNTests */ = {
+		00E356EF1AD99517003FC87E /* PomoTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* pomoRNTests.m */,
+				00E356F21AD99517003FC87E /* PomoTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = pomoRNTests;
+			path = PomoTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -126,7 +126,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* pomoRN */ = {
+		13B07FAE1A68108700A75B9A /* Pomo */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -137,7 +137,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = pomoRN;
+			name = Pomo;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -145,10 +145,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				BA77D1E1E5EE38002845F114 /* libPods-pomoRN.a */,
-				ABE594687B50F4D53DB9DDB5 /* libPods-pomoRN-pomoRNTests.a */,
-				2A73C1DD07D0A6666165C2DF /* libPods-pomoRN-tvOS.a */,
-				70320F3AB67C335A082C93CE /* libPods-pomoRN-tvOSTests.a */,
+				BA77D1E1E5EE38002845F114 /* libPods-Pomo.a */,
+				ABE594687B50F4D53DB9DDB5 /* libPods-Pomo-PomoTests.a */,
+				2A73C1DD07D0A6666165C2DF /* libPods-Pomo-tvOS.a */,
+				70320F3AB67C335A082C93CE /* libPods-Pomo-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,9 +163,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* pomoRN */,
+				13B07FAE1A68108700A75B9A /* Pomo */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* pomoRNTests */,
+				00E356EF1AD99517003FC87E /* PomoTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				CA8982E5ED42AF3AE8A93A07 /* Pods */,
@@ -179,10 +179,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* pomoRN.app */,
-				00E356EE1AD99517003FC87E /* pomoRNTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* pomoRN-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* pomoRN-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* Pomo.app */,
+				00E356EE1AD99517003FC87E /* PomoTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* Pomo-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* Pomo-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,14 +190,14 @@
 		CA8982E5ED42AF3AE8A93A07 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E6457070C93228F24C1B5EDC /* Pods-pomoRN.debug.xcconfig */,
-				F3720CAD73ED67C8D6E25E6F /* Pods-pomoRN.release.xcconfig */,
-				4E6984953E1564ACD722EE63 /* Pods-pomoRN-pomoRNTests.debug.xcconfig */,
-				D426E2A2AD23BBA30F99F748 /* Pods-pomoRN-pomoRNTests.release.xcconfig */,
-				A19939D3F129DCCD087A686E /* Pods-pomoRN-tvOS.debug.xcconfig */,
-				E854710EB333B0498B32FBE7 /* Pods-pomoRN-tvOS.release.xcconfig */,
-				AC7089D2884E0A7D6EA3B278 /* Pods-pomoRN-tvOSTests.debug.xcconfig */,
-				DAA2CD8A1615D5F42E17C081 /* Pods-pomoRN-tvOSTests.release.xcconfig */,
+				E6457070C93228F24C1B5EDC /* Pods-Pomo.debug.xcconfig */,
+				F3720CAD73ED67C8D6E25E6F /* Pods-Pomo.release.xcconfig */,
+				4E6984953E1564ACD722EE63 /* Pods-Pomo-PomoTests.debug.xcconfig */,
+				D426E2A2AD23BBA30F99F748 /* Pods-Pomo-PomoTests.release.xcconfig */,
+				A19939D3F129DCCD087A686E /* Pods-Pomo-tvOS.debug.xcconfig */,
+				E854710EB333B0498B32FBE7 /* Pods-Pomo-tvOS.release.xcconfig */,
+				AC7089D2884E0A7D6EA3B278 /* Pods-Pomo-tvOSTests.debug.xcconfig */,
+				DAA2CD8A1615D5F42E17C081 /* Pods-Pomo-tvOSTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -216,9 +216,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* pomoRNTests */ = {
+		00E356ED1AD99517003FC87E /* PomoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "pomoRNTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "PomoTests" */;
 			buildPhases = (
 				F00257FDF8E69DB23A9008E3 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -231,14 +231,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = pomoRNTests;
-			productName = pomoRNTests;
-			productReference = 00E356EE1AD99517003FC87E /* pomoRNTests.xctest */;
+			name = PomoTests;
+			productName = PomoTests;
+			productReference = 00E356EE1AD99517003FC87E /* PomoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* pomoRN */ = {
+		13B07F861A680F5B00A75B9A /* Pomo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "pomoRN" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Pomo" */;
 			buildPhases = (
 				A86F74182B3379E1BC431881 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -252,14 +252,14 @@
 			);
 			dependencies = (
 			);
-			name = pomoRN;
-			productName = pomoRN;
-			productReference = 13B07F961A680F5B00A75B9A /* pomoRN.app */;
+			name = Pomo;
+			productName = Pomo;
+			productReference = 13B07F961A680F5B00A75B9A /* Pomo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* pomoRN-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* Pomo-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "pomoRN-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Pomo-tvOS" */;
 			buildPhases = (
 				36C0A4FB1651E69534016C81 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -272,14 +272,14 @@
 			);
 			dependencies = (
 			);
-			name = "pomoRN-tvOS";
-			productName = "pomoRN-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* pomoRN-tvOS.app */;
+			name = "Pomo-tvOS";
+			productName = "Pomo-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* Pomo-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* pomoRN-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* Pomo-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "pomoRN-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Pomo-tvOSTests" */;
 			buildPhases = (
 				138D6FBAA57B608F187BCB5B /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -291,9 +291,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "pomoRN-tvOSTests";
-			productName = "pomoRN-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* pomoRN-tvOSTests.xctest */;
+			name = "Pomo-tvOSTests";
+			productName = "Pomo-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* Pomo-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -322,7 +322,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "pomoRN" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Pomo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -335,10 +335,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* pomoRN */,
-				00E356ED1AD99517003FC87E /* pomoRNTests */,
-				2D02E47A1E0B4A5D006451C7 /* pomoRN-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* pomoRN-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* Pomo */,
+				00E356ED1AD99517003FC87E /* PomoTests */,
+				2D02E47A1E0B4A5D006451C7 /* Pomo-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* Pomo-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -409,7 +409,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-pomoRN-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Pomo-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -445,7 +445,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-pomoRN-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Pomo-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -458,7 +458,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-pomoRN/Pods-pomoRN-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Pomo/Pods-Pomo-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -467,7 +467,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pomoRN/Pods-pomoRN-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pomo/Pods-Pomo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A86F74182B3379E1BC431881 /* [CP] Check Pods Manifest.lock */ = {
@@ -485,7 +485,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-pomoRN-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Pomo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -498,7 +498,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-pomoRN-pomoRNTests/Pods-pomoRN-pomoRNTests-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Pomo-PomoTests/Pods-Pomo-PomoTests-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -507,7 +507,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pomoRN-pomoRNTests/Pods-pomoRN-pomoRNTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pomo-PomoTests/Pods-Pomo-PomoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F00257FDF8E69DB23A9008E3 /* [CP] Check Pods Manifest.lock */ = {
@@ -525,7 +525,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-pomoRN-pomoRNTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Pomo-PomoTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -577,7 +577,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* pomoRNTests.m in Sources */,
+				00E356F31AD99517003FC87E /* PomoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,7 +603,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* pomoRNTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* PomoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,12 +612,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* pomoRN */;
+			target = 13B07F861A680F5B00A75B9A /* Pomo */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* pomoRN-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* Pomo-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -625,14 +625,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E6984953E1564ACD722EE63 /* Pods-pomoRN-pomoRNTests.debug.xcconfig */;
+			baseConfigurationReference = 4E6984953E1564ACD722EE63 /* Pods-Pomo-PomoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = pomoRNTests/Info.plist;
+				INFOPLIST_FILE = PomoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -642,17 +642,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pomoRN.app/pomoRN";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pomo.app/Pomo";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D426E2A2AD23BBA30F99F748 /* Pods-pomoRN-pomoRNTests.release.xcconfig */;
+			baseConfigurationReference = D426E2A2AD23BBA30F99F748 /* Pods-Pomo-PomoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = pomoRNTests/Info.plist;
+				INFOPLIST_FILE = PomoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -662,19 +662,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pomoRN.app/pomoRN";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pomo.app/Pomo";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6457070C93228F24C1B5EDC /* Pods-pomoRN.debug.xcconfig */;
+			baseConfigurationReference = E6457070C93228F24C1B5EDC /* Pods-Pomo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = pomoRN/Info.plist;
+				INFOPLIST_FILE = Pomo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -682,7 +682,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = pomoRN;
+				PRODUCT_NAME = Pomo;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -691,12 +691,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3720CAD73ED67C8D6E25E6F /* Pods-pomoRN.release.xcconfig */;
+			baseConfigurationReference = F3720CAD73ED67C8D6E25E6F /* Pods-Pomo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = pomoRN/Info.plist;
+				INFOPLIST_FILE = Pomo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -704,7 +704,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = pomoRN;
+				PRODUCT_NAME = Pomo;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -712,7 +712,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A19939D3F129DCCD087A686E /* Pods-pomoRN-tvOS.debug.xcconfig */;
+			baseConfigurationReference = A19939D3F129DCCD087A686E /* Pods-Pomo-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -723,14 +723,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "pomoRN-tvOS/Info.plist";
+				INFOPLIST_FILE = "Pomo-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.pomoRN-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.Pomo-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -740,7 +740,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E854710EB333B0498B32FBE7 /* Pods-pomoRN-tvOS.release.xcconfig */;
+			baseConfigurationReference = E854710EB333B0498B32FBE7 /* Pods-Pomo-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -751,14 +751,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "pomoRN-tvOS/Info.plist";
+				INFOPLIST_FILE = "Pomo-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.pomoRN-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.Pomo-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -768,7 +768,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC7089D2884E0A7D6EA3B278 /* Pods-pomoRN-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = AC7089D2884E0A7D6EA3B278 /* Pods-Pomo-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -778,24 +778,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "pomoRN-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Pomo-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.pomoRN-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.Pomo-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pomoRN-tvOS.app/pomoRN-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pomo-tvOS.app/Pomo-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAA2CD8A1615D5F42E17C081 /* Pods-pomoRN-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = DAA2CD8A1615D5F42E17C081 /* Pods-Pomo-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -805,17 +805,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "pomoRN-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Pomo-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.pomoRN-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.Pomo-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pomoRN-tvOS.app/pomoRN-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pomo-tvOS.app/Pomo-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -936,7 +936,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "pomoRNTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "PomoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -945,7 +945,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "pomoRN" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Pomo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -954,7 +954,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "pomoRN-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Pomo-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -963,7 +963,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "pomoRN-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Pomo-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -972,7 +972,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "pomoRN" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Pomo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
