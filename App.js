@@ -9,17 +9,13 @@
 import React from 'react';
 import {
   SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
 } from 'react-native';
 import styles from './Styles';
 
 import Timer from './Timer.component';
 
 const App = () => {
+
   return (
     <SafeAreaView style={styles.background}>
         <Timer />

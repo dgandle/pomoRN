@@ -19,6 +19,7 @@
     "react-native-pure-button": "^2.0.8",
     "react-native-really-awesome-button": "^1.6.0",
     "react-native-reanimated": "^1.9.0",
+    "react-native-splash-screen": "^3.2.0",
     "react-native-svg": "^12.1.0"
   },
   "devDependencies": {

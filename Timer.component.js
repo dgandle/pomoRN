@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
     View,
     Text,
 } from 'react-native';
 import BackgroundTimer from 'react-native-background-timer';
+import SplashScreen from 'react-native-splash-screen';
 
 import TimerStatus from './TimerStatus';
 import TimerButtonSequence from './TimerButtonSequence.component';
@@ -16,8 +17,12 @@ const Timer = () => {
     const [count, setCount] = useState(0);
     const [status, setStatus] = useState(TimerStatus.STOPPED)
 
-    const activeMinutes = 1/6
-    const restingMinutes = 1/6
+    const activeMinutes = 25
+    const restingMinutes = 5
+
+    useEffect(() => {
+        SplashScreen.hide()
+    })
 
     startTimer = (newStatus) => {
         setStatus(newStatus)
