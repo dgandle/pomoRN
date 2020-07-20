@@ -14,6 +14,8 @@ target 'Pomo' do
 
   pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
 
+  pod 'RNBackgroundFetch', :path => '../node_modules/react-native-background-fetch'
+
   target 'PomoTests' do
     inherit! :complete
     # Pods for testing

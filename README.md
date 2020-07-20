@@ -8,3 +8,4 @@ The [Pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) is a 
 
 ### Known Issues
 - On Android, the "Resume" button does not fade out.
+- On Android, the "Take a break." text does not properly invert as the timer animation passes through it.

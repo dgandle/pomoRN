@@ -46,7 +46,7 @@
 		00E356EE1AD99517003FC87E /* PomoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* PomoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PomoTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* Pomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* Pomo..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomo..app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Pomo/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Pomo/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Pomo/Images.xcassets; sourceTree = "<group>"; };
@@ -188,7 +188,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Pomo.app */,
+				13B07F961A680F5B00A75B9A /* Pomo..app */,
 				00E356EE1AD99517003FC87E /* PomoTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* Pomo-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* Pomo-tvOSTests.xctest */,
@@ -252,7 +252,7 @@
 			);
 			name = Pomo;
 			productName = Pomo;
-			productReference = 13B07F961A680F5B00A75B9A /* Pomo.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Pomo..app */;
 			productType = "com.apple.product-type.application";
 		};
 		2D02E47A1E0B4A5D006451C7 /* Pomo-tvOS */ = {
@@ -641,7 +641,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pomo.app/Pomo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pomo..app/Pomo.";
 			};
 			name = Debug;
 		};
@@ -661,7 +661,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pomo.app/Pomo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pomo..app/Pomo.";
 			};
 			name = Release;
 		};
@@ -682,7 +682,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dgandle.Pomo;
-				PRODUCT_NAME = Pomo;
+				PRODUCT_NAME = Pomo.;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -705,7 +705,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dgandle.Pomo;
-				PRODUCT_NAME = Pomo;
+				PRODUCT_NAME = Pomo.;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
