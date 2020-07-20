@@ -1,24 +1,33 @@
-import React, { useState, useEffect } from 'react';
-import { View, Text } from 'react-native';
-import BackgroundTimer from 'react-native-background-timer';
-import SplashScreen from 'react-native-splash-screen';
+import React, { useState, useEffect } from 'react'
+import { View, Text } from 'react-native'
+import BackgroundTimer from 'react-native-background-timer'
+import SplashScreen from 'react-native-splash-screen'
+import PushNotification from 'react-native-push-notification'
 
-import TimerStatus from './TimerStatus';
-import TimerButton from './TimerButton.component';
-import TimerVisual from './TimerVisual.component';
+import TimerStatus from './TimerStatus'
+import TimerButton from './TimerButton.component'
+import TimerVisual from './TimerVisual.component'
 
-import styles from './Timer.styles';
+import styles from './Timer.styles'
 
 const Timer = () => {
 
     const [count, setCount] = useState(0);
     const [status, setStatus] = useState(TimerStatus.STOPPED)
 
-    const activeMinutes = 25
-    const restingMinutes = 5
+    const activeMinutes = 1/6
+    const restingMinutes = 1/6
 
     useEffect(() => {
         SplashScreen.hide()
+        PushNotification.configure({
+            permissions: {
+              alert: true,
+              badge: true,
+              sound: true,
+            },
+            popInitialNotification: true,
+          });
     }, [])
 
     useEffect(() => {
@@ -28,29 +37,36 @@ const Timer = () => {
     updateTimer = () => {
         switch(status) {
             case TimerStatus.STOPPED:
-                BackgroundTimer.stopBackgroundTimer();
-                setCount(0);
-                break;
+                BackgroundTimer.stopBackgroundTimer()
+                setCount(0)
+                break
             case TimerStatus.ACTIVE:
             case TimerStatus.RESTING:
+                BackgroundTimer.stopBackgroundTimer()
                 BackgroundTimer.runBackgroundTimer(() => {
-                    updateCount();
-                }, 100);
-                break;
+                    updateCount()
+                }, 100)
+                break
             case TimerStatus.PAUSED_ACTIVE:
             case TimerStatus.PAUSED_RESTING:
                 BackgroundTimer.stopBackgroundTimer();
-                break;
+                break
         }
     }
 
     updateCount = () => {
-        setCount(count + 1);
+        setCount(count + 1)
         switch (status) {
             case TimerStatus.ACTIVE:
                 if (count >= activeMinutes * 60 * 10) {
                     setCount(0)
                     setStatus(TimerStatus.RESTING)
+                    PushNotification.localNotification({
+                        title: 'RESTING',
+                        message: `Take a break.`,
+                        playSound: true,
+                        soundName: 'default',
+                      });
                 }
                 break;
             case TimerStatus.RESTING:
@@ -83,7 +99,7 @@ const Timer = () => {
                         <View style={styles.buttonWrapper}>
                             <TimerButton
                             onPress={() => {
-                                setStatus(TimerStatus.ACTIVE);
+                                setStatus(TimerStatus.ACTIVE)
                                 }}
                             >
                                 BEGIN  →
@@ -94,7 +110,7 @@ const Timer = () => {
                         <View style={styles.buttonWrapper}>
                             <TimerButton
                             onPress={() => {
-                                setStatus(status == TimerStatus.ACTIVE ? TimerStatus.PAUSED_ACTIVE : TimerStatus.PAUSED_RESTING);
+                                setStatus(status == TimerStatus.ACTIVE ? TimerStatus.PAUSED_ACTIVE : TimerStatus.PAUSED_RESTING)
                                 }}
                             >
                                 PAUSE
@@ -106,7 +122,7 @@ const Timer = () => {
                                 <View style={styles.buttonContainer}>
                                     <TimerButton
                                         onPress={() => {
-                                            setStatus(TimerStatus.ACTIVE);
+                                            setStatus(status == TimerStatus.PAUSED_ACTIVE ? TimerStatus.ACTIVE : TimerStatus.RESTING)
                                             }}
                                         >
                                         RESUME
@@ -115,7 +131,7 @@ const Timer = () => {
                                 <View style={styles.buttonContainer}>
                                     <TimerButton
                                         onPress={() => {
-                                            setStatus(TimerStatus.STOPPED);
+                                            setStatus(TimerStatus.STOPPED)
                                             }}
                                         >
                                         END
@@ -125,7 +141,7 @@ const Timer = () => {
                     )}
             </View>
         </View>
-    );
+    )
 }
 
-export default Timer;
+export default Timer

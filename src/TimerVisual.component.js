@@ -1,13 +1,7 @@
 import React, { useState, useEffect, Component } from 'react'
-import { Animated, Easing, View, UIManager, LayoutAnimation } from 'react-native';
-import Svg, {
-    Circle,
-    ClipPath,
-    Rect,
-    Text,
-    TSpan
-  } from 'react-native-svg';
-import TimerStatus from './TimerStatus';
+import { Animated, Easing, View, UIManager, LayoutAnimation } from 'react-native'
+import Svg, { Circle, ClipPath, Rect, Text, TSpan } from 'react-native-svg'
+import TimerStatus from './TimerStatus'
 
 if (
     Platform.OS === "android" &&
@@ -16,7 +10,11 @@ if (
     UIManager.setLayoutAnimationEnabledExperimental(true);
   }
 
-class Clipped extends Component {
+//  Would prefer to make this a functional component, but had to use a class because:
+//      1)  SVG animation is not possible without first wrapping with createAnimatedComponent
+//      2)  LayoutAnimation does not render 'delete' animations on android with useEffect, and likewise
+//          componentDidUpdate(). Hence the use of UNSAFE_componentWillUpdate().
+class Visual extends Component {
     constructor(props) {
         super(props);
         
@@ -32,7 +30,7 @@ class Clipped extends Component {
                 property: LayoutAnimation.Properties.opacity,
                 type: LayoutAnimation.Types.linear,
             },
-        };
+        }
     }
 
     UNSAFE_componentWillUpdate(nextProps) {
@@ -79,7 +77,7 @@ class Clipped extends Component {
     }
 }
 
-const AnimatedClipped = Animated.createAnimatedComponent(Clipped);
+const AnimatedVisual = Animated.createAnimatedComponent(Visual)
 
 const TimerVisual = (props) => {
 
@@ -125,7 +123,7 @@ const TimerVisual = (props) => {
     }
 
     return (
-        <AnimatedClipped status={props.status} clipHeight={height()} opacity={opacity}></AnimatedClipped>
+        <AnimatedVisual status={props.status} clipHeight={height()} opacity={opacity}></AnimatedVisual>
     )
 }
 

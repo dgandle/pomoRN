@@ -1,5 +1,5 @@
-import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import React from 'react'
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 
 const TimerButton = (props) => {
     return (
@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default TimerButton;
+export default TimerButton

@@ -6,4 +6,4 @@ const TimerStatus = {
     PAUSED_RESTING: 'paused_resting',
 }
 
-export default TimerStatus;
+export default TimerStatus
