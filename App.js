@@ -7,17 +7,13 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-} from 'react-native';
-import styles from './Styles';
+import { SafeAreaView } from 'react-native';
 
-import Timer from './Timer.component';
+import Timer from './src/Timer.component';
 
 const App = () => {
-
   return (
-    <SafeAreaView style={styles.background}>
+    <SafeAreaView style={{backgroundColor: '#F3F6EF', flex: 1}}>
         <Timer />
     </SafeAreaView>
   );

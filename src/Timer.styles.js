@@ -1,7 +1,4 @@
-import React from 'react';
-import {
-    StyleSheet,
-} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 const style = StyleSheet.create({
     container: {
@@ -18,11 +15,7 @@ const style = StyleSheet.create({
         textAlign: 'left',
         alignSelf: 'flex-start'
     },
-
-    timerVisual: {
-        backgroundColor: 'red',
-    },
-
+    
     buttonSequenceContainer: {
         alignSelf: 'stretch',
         justifyContent: 'space-between',
@@ -33,10 +26,6 @@ const style = StyleSheet.create({
         justifyContent: 'center',
         alignSelf: 'stretch',
         padding: 32,
-    },
-
-    secondText: {
-        fontSize: 25,
     },
 
     buttonContainer: {
