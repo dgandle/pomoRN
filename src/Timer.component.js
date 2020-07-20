@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { View, Text } from 'react-native'
 import BackgroundTimer from 'react-native-background-timer'
 import SplashScreen from 'react-native-splash-screen'
+import Sound from 'react-native-sound'
 
 import TimerStatus from './TimerStatus'
 import TimerButton from './TimerButton.component'
@@ -14,11 +15,29 @@ const Timer = () => {
     const [count, setCount] = useState(0);
     const [status, setStatus] = useState(TimerStatus.STOPPED)
 
-    const activeMinutes = 25
-    const restingMinutes = 5
+    const activeMinutes = 1/6
+    const restingMinutes = 1/6
+
+    var marimbaHigh = new Sound('marimba-high.mp3', Sound.MAIN_BUNDLE, (error) => {
+        if (error) {
+            console.log('Failed to load sound marimba-high.mp3', error)
+            return
+        }
+    })
+
+    var marimbaLow = new Sound('marimba-low.mp3', Sound.MAIN_BUNDLE, (error) => {
+        if (error) {
+            console.log('Failed to load sound marimba-low.mp3', error)
+            return
+        }
+    })
+
+    marimbaHigh.setVolume(0.5)
+    marimbaLow.setVolume(0.5)
 
     useEffect(() => {
         SplashScreen.hide()
+        Sound.setCategory('Playback')
     }, [])
 
     useEffect(() => {
@@ -52,14 +71,16 @@ const Timer = () => {
                 if (count >= activeMinutes * 60 * 10) {
                     setCount(0)
                     setStatus(TimerStatus.RESTING)
+                    marimbaHigh.play()
                 }
-                break;
+                break
             case TimerStatus.RESTING:
                 if (count >= restingMinutes * 60 * 10) { 
                     setCount(0)
                     setStatus(TimerStatus.ACTIVE)
+                    marimbaLow.play()
                 }
-                break;
+                break
         }
     }
 
