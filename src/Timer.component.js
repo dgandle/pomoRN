@@ -18,14 +18,14 @@ const Timer = () => {
     const activeMinutes = 1/6
     const restingMinutes = 1/6
 
-    var marimbaHigh = new Sound('marimba-high.mp3', Sound.MAIN_BUNDLE, (error) => {
+    var marimbaHigh = new Sound('marimba_high.mp3', Sound.MAIN_BUNDLE, (error) => {
         if (error) {
             console.log('Failed to load sound marimba-high.mp3', error)
             return
         }
     })
 
-    var marimbaLow = new Sound('marimba-low.mp3', Sound.MAIN_BUNDLE, (error) => {
+    var marimbaLow = new Sound('marimba_low.mp3', Sound.MAIN_BUNDLE, (error) => {
         if (error) {
             console.log('Failed to load sound marimba-low.mp3', error)
             return
