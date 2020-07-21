@@ -15,25 +15,8 @@ const Timer = () => {
     const [count, setCount] = useState(0);
     const [status, setStatus] = useState(TimerStatus.STOPPED)
 
-    const activeMinutes = 1/6
-    const restingMinutes = 1/6
-
-    var marimbaHigh = new Sound('marimba_high.mp3', Sound.MAIN_BUNDLE, (error) => {
-        if (error) {
-            console.log('Failed to load sound marimba-high.mp3', error)
-            return
-        }
-    })
-
-    var marimbaLow = new Sound('marimba_low.mp3', Sound.MAIN_BUNDLE, (error) => {
-        if (error) {
-            console.log('Failed to load sound marimba-low.mp3', error)
-            return
-        }
-    })
-
-    marimbaHigh.setVolume(0.5)
-    marimbaLow.setVolume(0.5)
+    const activeMinutes = 1
+    const restingMinutes = 5
 
     useEffect(() => {
         SplashScreen.hide()
@@ -71,17 +54,43 @@ const Timer = () => {
                 if (count >= activeMinutes * 60 * 10) {
                     setCount(0)
                     setStatus(TimerStatus.RESTING)
-                    marimbaHigh.play()
+                    playSound()
                 }
                 break
             case TimerStatus.RESTING:
                 if (count >= restingMinutes * 60 * 10) { 
                     setCount(0)
                     setStatus(TimerStatus.ACTIVE)
-                    marimbaLow.play()
+                    playSound()
                 }
                 break
         }
+    }
+
+    playSound = () => {
+        switch (status) {
+            case TimerStatus.RESTING:
+                var marimbaHigh = new Sound('marimba_high.mp3', Sound.MAIN_BUNDLE, (error) => {
+                    if (error) {
+                        console.log('Failed to load sound marimba_high.mp3', error)
+                        return
+                    }
+                    marimbaHigh.setVolume(0.5).play()
+                })
+                marimbaHigh.release()
+                break
+            case TimerStatus.ACTIVE:
+                var marimbaLow = new Sound('marimba_low.mp3', Sound.MAIN_BUNDLE, (error) => {
+                    if (error) {
+                        console.log('Failed to load sound marimba_low.mp3', error)
+                        return
+                    }
+                    marimbaLow.setVolume(0.5).play()
+                })
+                marimbaHigh.release()
+                break
+        }
+        
     }
 
     convertCountToProgress = () => {
