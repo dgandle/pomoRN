@@ -4,7 +4,7 @@
 ### About
 The [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) is a productivity method which breaks down work into short, 25-minute chunks with 5-minute breaks between. **Pomo.** is a lightweight and extremely minimal timer which follows the Pomodoro technique's 25/5 structure. There are many other Pomodoro timers available on the app store, but they're often (subjectively) ugly or suffer from feature bloat.
 
-**Pomo.** was created as a hobby project so I could learn React Native, from initial app creation through to public release. It will soon be available on both the App Store and Google Play Store (_currently: pending review_), and will be updated on both platforms as I fix issues and add new features. 
+**Pomo.** was created as a hobby project so I could learn React Native, from initial app creation through to public release. It will soon be available on both the App Store and Google Play Store, and will be updated on both platforms as I fix issues and add new features. 
 
 ### Known Issues
 More info in [Issues](https://github.com/dgandle/pomoRN/issues) tab.
